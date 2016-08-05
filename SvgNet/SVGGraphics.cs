@@ -1237,9 +1237,9 @@ namespace SvgNet.SvgGdi
 		/// Get a string containing an SVG document.  The very heart of SvgGdi.  It calls <c>WriteSVGString</c> on the <see cref="SvgElement"/>
 		/// at the root of this <c>SvgGraphics</c> and returns the resulting string.
 		/// </summary>
-		public string WriteSVGString()
+		public string WriteSVGString(bool compressAttributes)
 		{
-			return _root.WriteSVGString(true);
+			return _root.WriteSVGString(compressAttributes);
 		}
 
 		/// <summary>

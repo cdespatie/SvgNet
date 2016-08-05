@@ -708,7 +708,7 @@ namespace SvgGdiTest
 			ig = new SvgGraphics();
 			Render(ig);
 
-			string s = ig.WriteSVGString();
+			string s = ig.WriteSVGString(true);
 
 			tbSVG.Text = s;
 
